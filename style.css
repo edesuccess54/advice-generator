@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Manrope', sans-serif;
+    padding: 0 20px;
+    padding-bottom: 0;
+    background-color: hsl(217, 19%, 24%);
+}
+
+.container {
+    background-color: hsl(217, 19%, 38%);
+    color: #fff;
+    max-width: 375px;
+    position: relative;
+    border-radius: 15px;
+    padding: 0 20px 40px 20px;
+    text-align: center;
+}
+
+.header  {
+    padding: 40px 0;
+}
+.header p{
+    color: hsl(150, 100%, 66%);
+    font-size: 14px;
+    letter-spacing: 3.5px;
+}
+
+.content {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.content p {
+    color: hsl(193, 38%, 86%);
+    font-size: 24px;
+}
+
+.divider {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+    width: 100%;
+}
+
+.dice {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: hsl(150, 100%, 66%);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    cursor: pointer;
+}
+
+.dice:hover {
+    box-shadow: 2px -2px 30px hsl(150, 100%, 66%);
+}
+
+.attribution { 
+    color: #fff;
+    margin-top: 90px;
+    font-size: 12px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(150, 100%, 66%); 
+}
+
+.activate.spin-left {
+    position: relative;
+    animation-name: toleft;
+    animation-duration: 1s;
+  }
+
+.activate.spin-right {
+    position: relative;
+    animation-name: toright;
+    animation-duration: 1s;
+  }
+  
+
+  /* animation */
+  @keyframes toright {
+    0%  {transform: rotate(-360deg) }
+  }
+
+  @keyframes toleft {
+    0%  {transform: rotate(360deg) }
+  }
+
+
+  /* media queries */
+
+  @media screen and (min-width: 768px){
+      body {
+          display: block;
+      }
+    .container {
+        margin: 100px auto;
+        min-width: 500px;
+    }
+
+    .attribution { 
+        font-size: 20px; text-align: center; 
+    }
+
+    .content p {
+        font-size: 28px;
+    }
+
+  }
