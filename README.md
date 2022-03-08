@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: https://github.com/edesuccess54/advice-generator/tree/master
+- Solution URL: https://github.com/edesuccess54/advice-generator
 - Live Site URL: https://advice-generator1.netlify.app
 
 ### Built with
